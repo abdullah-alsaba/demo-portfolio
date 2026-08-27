@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Abdulla Al Saba — MERN Stack Developer specializing in MongoDB, Express.js, React, Node.js, Next.js, and Tailwind CSS. View my projects and resume.">
+  <title>Abdulla Al Saba</title>
+  <meta property="og:title" content="Abdulla Al Saba — MERN Stack Developer">
+  <meta property="og:description"
+    content="MERN Stack Developer specializing in MongoDB, Express.js, React, Node.js, Next.js, and Tailwind CSS.">
+  <meta property="og:image" content="https://abdulla.pro.bd/profile/abdullaal.png">
+  <meta property="og:url" content="https://abdulla.pro.bd/">
+  <meta property="og:type" content="website">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400&display=swap"
+    rel="stylesheet">
+
+  <link rel="shortcut icon" href="./favicon/my-brand.svg" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./favicon/my-brand.svg">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <!-- ===== HERO ===== -->
+  <div id="hero">
+    <div id="grid"></div>
+    <div id="portrait-layer">
+      <img id="img-base" alt="Abdulla Al Saba" src="./profile/saba.png">
+      <img id="img-alt" alt="Abdulla Al Saba" src="./profile/saba.png">
+    </div>
+    <div id="hero-ui">
+      <div id="name">
+        <span id="name-first">ABDULLA</span>
+        <span id="name-last">AL SABA</span>
+      </div>
+
+      <nav id="nav">
+        <button id="nav-toggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false"
+          aria-controls="nav-menu">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <div id="nav-links" class="nav-links" aria-label="Primary navigation">
+          <a href="#" class="nav-about" id="nav-about-btn">About</a>
+          <a href="#" id="nav-skills-btn">Skills</a>
+          <a href="#" id="nav-resume-btn">Education</a>
+          <a href="#" id="nav-projects-btn">Projects</a>
+          <a href="#" id="nav-contact-btn">Contact</a>
+        </div>
+
+        <div id="nav-menu" class="nav-menu" aria-hidden="true">
+          <a href="#" class="nav-menu-link" data-open="sec-about">About</a>
+          <a href="#" class="nav-menu-link" data-open="sec-skills">Skills</a>
+          <a href="#" class="nav-menu-link" data-open="sec-resume">Education</a>
+          <a href="#" class="nav-menu-link" data-open="sec-projects">Projects</a>
+          <a href="#" class="nav-menu-link" data-open="sec-contact">Contact</a>
+        </div>
+      </nav>
+
+      <div id="socials">
+        <a href="https://www.linkedin.com/in/abdullah-alsaba/" target="_blank" title="LinkedIn">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="https://github.com/abdullah-alsaba" target="_blank" title="GitHub">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+        </a>
+        <a href="https://x.com/abdulla_saba" target="_blank" title="X">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+        </a>
+        <a href="mailto:abdullah.alsaba.dev@gmail.com" title="Email">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+          </svg>
+        </a>
+      </div>
+
+      <div id="tagline">
+        MERN Stack Developer — Portfolio 2026
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT PANEL ===== -->
+  <div id="about-panel">
+    <div id="about-img">
+      <img src="./profile/abdullaal.png" alt="Abdulla Al Saba" />
+    </div>
+    <div id="about-content">
+
+      <button id="back-btn">
+        <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 5l-7 7 7 7" />
+        </svg>
+        Back
+      </button>
+
+      <div>
+        <!-- Sub-navigation -->
+        <div id="about-subnav">
+          <button class="subnav-btn active" data-target="sec-about">About Me</button>
+          <button class="subnav-btn" data-target="sec-skills">Skills</button>
+          <button class="subnav-btn" data-target="sec-resume">Education</button>
+          <button class="subnav-btn" data-target="sec-projects">Projects</button>
+          <button class="subnav-btn" data-target="sec-contact">Contact</button>
+        </div>
+
+        <!-- ABOUT ME -->
+        <div id="sec-about" class="about-section visible">
+          <p class="about-eyebrow">Who I Am</p>
+          <h1 class="about-heading">Crafting<br><em>meaningful</em><br>experiences.</h1>
+
+          <p class="about-body">
+            I'm <strong>Abdulla Al Saba</strong>, a <strong>MERN Stack Developer</strong> who enjoys turning ideas into
+            clean, responsive, and scalable web applications. What pulled me into programming wasn't a single
+            moment — it was the slow realization that every website I used was just logic and structure someone had
+            carefully put together, and I wanted to learn how to build that myself.
+          </p>
+
+          <p class="about-body">
+            Since then, I've been building with <strong>MongoDB, Express.js, React, Node.js, Next.js, and Tailwind
+              CSS</strong>, working across the full stack — from designing APIs and data models to shaping the
+            interfaces people actually interact with. Alongside project work, I practice algorithmic problem-solving
+            on <strong>LeetCode</strong> to keep my core programming fundamentals sharp, because I've found that
+            good architecture and clean logic usually come from the same place.
+          </p>
+
+          <p class="about-body">
+            I care about writing code that's easy to reason about, not just code that works. Outside of building, I
+            spend time studying design decisions in products I admire and looking for small ways to improve how I
+            think through problems. My goal is simple: keep building things that are useful, well-made, and worth
+            being proud of.
+          </p>
+        </div>
+
+        <!-- SKILLS -->
+        <div id="sec-skills" class="about-section">
+          <p class="about-eyebrow">Skills</p>
+          <h1 class="about-heading">My<br>skills.</h1>
+
+          <div class="journey" aria-label="Skill journey">
+            <div class="journey-item">
+              <div class="journey-row">
+                <div class="journey-degree">MERN Stack</div>
+              </div>
+              <div class="journey-org">MongoDB, Express.js, React, Node.js, and full-stack application development</div>
+            </div>
+
+            <div class="journey-item">
+              <div class="journey-row">
+                <div class="journey-degree">REST API Design</div>
+              </div>
+              <div class="journey-org">Building and structuring RESTful APIs with Express.js and Node.js</div>
+            </div>
+
+            <div class="journey-item">
+              <div class="journey-row">
+                <div class="journey-degree">Authentication (JWT / OAuth)</div>
+              </div>
+              <div class="journey-org">Secure auth flows including JWT-protected routes and Google OAuth</div>
+            </div>
+
+            <div class="journey-item">
+              <div class="journey-row">
+                <div class="journey-degree">MongoDB Schema Design</div>
+              </div>
+              <div class="journey-org">Designing data models and relationships for scalable applications</div>
+            </div>
+
+            <div class="journey-item">
+              <div class="journey-row">
+                <div class="journey-degree">Deployment</div>
+              </div>
+              <div class="journey-org">Shipping full-stack apps with Vercel, Render, and Railway</div>
+            </div>
+
+            <div class="journey-item">
+              <div class="journey-row">
+                <div class="journey-degree">React</div>
+              </div>
+              <div class="journey-org">Components, state, hooks, and UI patterns</div>
+            </div>
+
+            <div class="journey-item">
+              <div class="journey-row">
+                <div class="journey-degree">JavaScript</div>
+              </div>
+              <div class="journey-org">Core language fundamentals and DOM interaction</div>
+            </div>
+
+            <div class="journey-item">
+              <div class="journey-row">
+                <div class="journey-degree">Tailwind CSS</div>
+              </div>
+              <div class="journey-org">Utility-first styling and responsive layouts</div>
+            </div>
+
+            <div class="journey-item">
+              <div class="journey-row">
+                <div class="journey-degree">CSS</div>
+              </div>
+              <div class="journey-org">Layouts, animations, and modern styling techniques</div>
+            </div>
+
+            <div class="journey-item">
+              <div class="journey-row">
+                <div class="journey-degree">HTML</div>
+              </div>
+              <div class="journey-org">Semantic structure and accessible markup</div>
+            </div>
+          </div>
+
+          <p class="resume-title" style="margin-bottom: 10px;">Tools I use</p>
+          <div class="skills-row" style="margin-bottom: 0; margin-top: 10px;">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">JWT</span>
+            <span class="skill-tag">OAuth</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">Render</span>
+            <span class="skill-tag">Railway</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <!-- RESUME -->
+        <div id="sec-resume" class="about-section">
+          <p class="about-eyebrow">Education</p>
+          <h1 class="about-heading">My<br>educational journey.</h1>
+
+          <p class="about-body" style="margin-bottom: 24px;">
+            While pursuing my BSc in Chemistry, I discovered a strong interest in web development
+            and started learning to code on my own. Since then, I have been building projects and
+            developing my web development skills alongside my academic studies.
+          </p>
+
+          <p class="section-label">Education</p>
+          <div class="journey" aria-label="Education timeline">
+            <div class="journey-item">
+              <div class="journey-row">
+                <div class="journey-degree">BSc in Chemistry</div>
+                <div class="journey-year">Running</div>
+              </div>
+              <div class="journey-org">Dhaka Central University</div>
+            </div>
+
+            <div class="journey-item">
+              <div class="journey-row">
+                <div class="journey-degree">HSC</div>
+                <div class="journey-year">2021</div>
+              </div>
+              <div class="journey-org">Nishindara Fakir Uddin School and College</div>
+            </div>
+
+            <div class="journey-item">
+              <div class="journey-row">
+                <div class="journey-degree">Dakhil</div>
+                <div class="journey-year">2019</div>
+              </div>
+              <div class="journey-org">Nasaratpur Dhontola Alim Madrasha</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECTS -->
+        <div id="sec-projects" class="about-section">
+          <p class="about-eyebrow">Selected Work</p>
+          <h1 class="about-heading">What I've<br>built.</h1>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <p class="project-number">01</p>
+              <p class="project-title">Portfolio Website</p>
+              <p class="project-desc">My personal portfolio website — fully responsive, built from scratch with custom
+                cursor interactions and smooth section transitions. Deployed with a custom domain and SEO optimization.
+              </p>
+              <div class="project-actions">
+                <a class="project-link" href="./projects/portfolio.html">View Details</a>
+                <a class="project-link" href="https://abdulla.pro.bd/" target="_blank" rel="noreferrer">Live</a>
+                <a class="project-link" href="https://github.com/abdullah-alsaba/ABDULLA-AL-SABA" target="_blank"
+                  rel="noreferrer">GitHub</a>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <p class="project-number">02</p>
+              <p class="project-title">SkillSphere</p>
+              <p class="project-desc">An online learning platform designed to deliver an engaging and user-friendly
+                educational experience. Features a responsive interface, organized course content, and reusable React
+                components — demonstrating modern frontend architecture and clean UI development.</p>
+              <div class="project-actions">
+                <a class="project-link" href="./projects/skillsphere.html">View Details</a>
+                <a class="project-link" href="https://skillsphere-omega-neon.vercel.app/" target="_blank"
+                  rel="noreferrer">Live</a>
+                <a class="project-link" href="https://github.com/abdullah-alsaba/SkillSphereb" target="_blank"
+                  rel="noreferrer">GitHub</a>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <p class="project-number">03</p>
+              <p class="project-title">SportNest</p>
+              <p class="project-desc">A full-stack sports facility booking platform, similar in spirit to Playo or
+                BookMyTurf. Users can search, filter, and book facilities by date and time slot, while logged-in owners
+                can list and manage their own facilities. Chose a JWT stored in an HttpOnly cookie over local storage to
+                keep auth state secure and persistent across page reloads, verified through Express middleware on every
+                protected route. Designed the MongoDB schema around normalized Facility, Booking, and User collections
+                with referenced ObjectIds to keep booking history queries fast and avoid data duplication.</p>
+              <div class="project-actions">
+                <a class="project-link" href="./projects/sportnest.html">View Details</a>
+                <a class="project-link" href="https://sportnest-teal.vercel.app/" target="_blank"
+                  rel="noreferrer">Live</a>
+                <a class="project-link" href="https://github.com/abdullah-alsaba/SportNest-client" target="_blank"
+                  rel="noreferrer">Client</a>
+                <a class="project-link" href="https://github.com/abdullah-alsaba/SportNest-server" target="_blank"
+                  rel="noreferrer">Server</a>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Express.js</span>
+                <span class="project-tag">MongoDB</span>
+                <span class="project-tag">JWT</span>
+                <span class="project-tag">Framer Motion</span>
+                <span class="project-tag">Tailwind CSS</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <p class="project-number">04</p>
+              <p class="project-title">NexaFlow</p>
+              <p class="project-desc">A modern productivity and workflow management web app called NexaFlow. Designed to
+                improve task organization and workflow efficiency with a clean UI and smooth UX.</p>
+              <div class="project-actions">
+                <a class="project-link" href="./projects/nexaflow.html">View Details</a>
+                <a class="project-link" href="https://nexaflow-by-saba.netlify.app/" target="_blank"
+                  rel="noreferrer">Live</a>
+                <a class="project-link" href="https://github.com/abdullah-alsaba/nexaflow" target="_blank"
+                  rel="noreferrer">GitHub</a>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">Tailwind CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div id="sec-contact" class="about-section">
+          <p class="about-eyebrow">Get In Touch</p>
+          <h1 class="about-heading">Let's<br>connect.</h1>
+
+          <div class="contact-card">
+            <p class="about-body" style="margin-bottom: 18px; max-width: 680px;">
+              For collaboration, internships, or project inquiries, feel free to reach out. I typically respond within
+              24–48 hours.
+            </p>
+
+            <div class="contact-grid">
+              <div class="contact-item">
+                <div class="contact-label">Email</div>
+                <div class="contact-value">
+                  <a href="mailto:abdullah.alsaba.dev@gmail.com">abdullah.alsaba.dev@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <form id="contact-form" class="contact-form"
+              action="https://formsubmit.co/ajax/abdullah.alsaba.dev@gmail.com" method="POST" novalidate>
+              <input type="hidden" name="_subject" value="New message from portfolio website" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="text" name="_honey" class="contact-honey" tabindex="-1" autocomplete="off" />
+
+              <div class="form-grid">
+                <div class="form-field">
+                  <label class="form-label" for="contact-name">Your Name</label>
+                  <input id="contact-name" class="form-input" name="name" type="text" placeholder="Your full name"
+                    required />
+                  <div class="form-error" data-for="contact-name" aria-live="polite"></div>
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="contact-email">Your Email</label>
+                  <input id="contact-email" class="form-input" name="email" type="email" placeholder="you@example.com"
+                    required />
+                  <div class="form-error" data-for="contact-email" aria-live="polite"></div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="contact-message">Your Message</label>
+                <textarea id="contact-message" class="form-textarea" name="message" rows="6"
+                  placeholder="Tell me about your project…" required></textarea>
+                <div class="form-error" data-for="contact-message" aria-live="polite"></div>
+              </div>
+
+              <div class="form-actions">
+                <button id="contact-submit" class="form-submit" type="submit">Send Message</button>
+                <div id="contact-status" class="form-status" aria-live="polite">
+                  <svg id="status-icon" viewBox="0 0 24 24" style="display:none;" width="18" height="18">
+                    <path id="status-icon-path" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span id="status-text"></span>
+                </div>
+              </div>
+            </form>
+
+            <div class="resume-divider"></div>
+            <p class="section-label">Resume</p>
+            <a class="resume-download" href="./Abdulla_Resume.pdf" target="_blank" rel="noreferrer"
+              id="view-resume-btn">
+              <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M5 12h14" />
+              </svg>
+              View Resume
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="about-footer">
+        <span id="about-footer-name">Abdulla Al Saba — © 2026</span>
+        <div id="about-footer-links">
+          <a href="https://www.linkedin.com/in/abdullah-alsaba/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/abdullah-alsaba" target="_blank">GitHub</a>
+          <a href="mailto:abdullah.alsaba.dev@gmail.com">Email</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="cursor"></div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio Website — Abdulla Al Saba's personal portfolio, built from scratch with HTML, CSS, and JavaScript.">
+  <title>Portfolio Website — Details</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="/favicon/my-brand.svg" type="image/x-icon">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    html,
+    body {
+      overflow: auto;
+      cursor: auto;
+    }
+
+    #cursor,
+    .echo {
+      display: none !important;
+    }
+
+    .detail-wrap {
+      min-height: 100vh;
+      background: #0e0e0e;
+      padding: 56px 20px;
+    }
+
+    .detail-inner .about-heading {
+      color: #ffffff !important;
+    }
+
+    .detail-inner .resume-title {
+      color: #f3f3f3 !important;
+    }
+
+    .detail-inner .resume-desc {
+      color: rgba(255, 255, 255, 0.8) !important;
+    }
+
+    .detail-inner .about-eyebrow {
+      color: rgba(255, 255, 255, 0.6) !important;
+    }
+
+    .detail-inner {
+      width: min(980px, 100%);
+      margin: 0 auto;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 32px;
+    }
+
+    .detail-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 18px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .feature-list li {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.75);
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .feature-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 520px) {
+      .detail-inner {
+        padding: 20px;
+      }
+
+      .detail-top {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="detail-wrap">
+    <section class="detail-inner">
+      <div class="detail-top">
+        <div>
+          <p class="about-eyebrow">Project Details</p>
+          <h1 class="about-heading">Portfolio<br>Website.</h1>
+        </div>
+        <a class="project-link" href="/">Back to Home</a>
+      </div>
+
+      <div class="project-actions" style="margin-bottom: 16px;">
+        <a class="project-link" href="https://abdulla.pro.bd/" target="_blank" rel="noreferrer">Live</a>
+        <a class="project-link" href="https://github.com/abdullah-alsaba/ABDULLA-AL-SABA" target="_blank"
+          rel="noreferrer">GitHub</a>
+      </div>
+
+      <p class="resume-title" style="margin-bottom: 10px;">Tech Stack</p>
+      <div class="project-tags" style="margin-bottom: 18px;">
+        <span class="project-tag">HTML</span>
+        <span class="project-tag">CSS</span>
+        <span class="project-tag">JavaScript</span>
+      </div>
+
+      <p class="resume-title" style="margin-bottom: 10px;">Description</p>
+      <p class="resume-desc" style="margin-bottom: 18px;">
+        My personal portfolio website showcasing my skills, projects, and professional identity with a modern
+        responsive UI. Built from scratch with vanilla HTML, CSS, and JavaScript — featuring a cinematic hero
+        experience, smooth section transitions, and a clean content panel. Deployed with a custom domain and SEO
+        optimization.
+      </p>
+
+      <p class="resume-title" style="margin-bottom: 10px;">Key Features</p>
+      <ul class="feature-list">
+        <li>Custom cursor and interactive hero section built with vanilla JavaScript</li>
+        <li>Smooth panel transitions between About, Skills, Education, Projects, and Contact</li>
+        <li>Fully responsive layout with no external UI framework</li>
+        <li>Custom domain deployment with SEO and Open Graph optimization</li>
+        <li>Working contact form with client-side validation</li>
+        <li>Accessible navigation with a mobile-friendly menu</li>
+      </ul>
+
+      <p class="resume-title" style="margin-bottom: 10px;">Challenges Faced</p>
+      <p class="resume-desc" style="margin-bottom: 18px;">
+        Balancing motion and visual polish with readability and responsiveness across devices, while keeping the UI
+        minimal and consistent, was the biggest challenge — especially building the cursor and transition effects
+        in plain JavaScript without a framework to lean on.
+      </p>
+
+      <p class="resume-title" style="margin-bottom: 10px;">Future Improvements</p>
+      <p class="resume-desc">
+        Add a full resume view, enhance accessibility (keyboard flow and ARIA), and include more case-study style
+        breakdowns for projects.
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>

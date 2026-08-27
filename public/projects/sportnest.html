@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="SportNest — Full-stack sports facility booking management system built with Next.js, Node.js, Express.js, and MongoDB.">
+  <title>SportNest — Details</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="/favicon/my-brand.svg" type="image/x-icon">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    html,
+    body {
+      overflow: auto;
+      cursor: auto;
+    }
+
+    #cursor,
+    .echo {
+      display: none !important;
+    }
+
+    .detail-wrap {
+      min-height: 100vh;
+      background: #0e0e0e;
+      padding: 56px 20px;
+    }
+
+    .detail-inner .about-heading {
+      color: #ffffff !important;
+    }
+
+    .detail-inner .resume-title {
+      color: #f3f3f3 !important;
+    }
+
+    .detail-inner .resume-desc {
+      color: rgba(255, 255, 255, 0.8) !important;
+    }
+
+    .detail-inner .about-eyebrow {
+      color: rgba(255, 255, 255, 0.6) !important;
+    }
+
+    .detail-inner {
+      width: min(980px, 100%);
+      margin: 0 auto;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 32px;
+    }
+
+    .detail-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 18px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .feature-list li {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.75);
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .feature-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 520px) {
+      .detail-inner {
+        padding: 20px;
+      }
+
+      .detail-top {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="detail-wrap">
+    <section class="detail-inner">
+      <div class="detail-top">
+        <div>
+          <p class="about-eyebrow">Project Details</p>
+          <h1 class="about-heading">SportNest.</h1>
+        </div>
+        <a class="project-link" href="/">Back to Home</a>
+      </div>
+
+      <div class="project-actions" style="margin-bottom: 16px;">
+        <a class="project-link" href="https://sportnest-teal.vercel.app/" target="_blank" rel="noreferrer">Live</a>
+        <a class="project-link" href="https://github.com/abdullah-alsaba/SportNest-client" target="_blank"
+          rel="noreferrer">Client</a>
+        <a class="project-link" href="https://github.com/abdullah-alsaba/SportNest-server" target="_blank"
+          rel="noreferrer">Server</a>
+      </div>
+
+      <p class="resume-title" style="margin-bottom: 10px;">Tech Stack</p>
+      <div class="project-tags" style="margin-bottom: 18px;">
+        <span class="project-tag">Next.js</span>
+        <span class="project-tag">React</span>
+        <span class="project-tag">Node.js</span>
+        <span class="project-tag">Express.js</span>
+        <span class="project-tag">MongoDB</span>
+        <span class="project-tag">Better Auth</span>
+        <span class="project-tag">Google OAuth</span>
+        <span class="project-tag">JWT</span>
+        <span class="project-tag">Tailwind CSS</span>
+        <span class="project-tag">HeroUI</span>
+        <span class="project-tag">Framer Motion</span>
+        <span class="project-tag">Vercel</span>
+      </div>
+
+      <p class="resume-title" style="margin-bottom: 10px;">Description</p>
+      <p class="resume-desc" style="margin-bottom: 18px;">
+        SportNest is a full-stack sports facility booking platform, similar in spirit to Playo or BookMyTurf. Users
+        can explore facilities such as football turfs, badminton courts, and swimming lanes, then book a specific
+        date and time slot. Logged-in users can also list and manage their own facilities, turning the platform into
+        a two-sided marketplace between facility owners and bookers rather than a simple listing site.
+      </p>
+
+      <p class="resume-title" style="margin-bottom: 10px;">Key Features</p>
+      <ul class="feature-list">
+        <li>Search facilities by name and filter by sport type using MongoDB $regex and $in queries</li>
+        <li>Book facilities by selecting a date, time slot, and duration, with live price calculation</li>
+        <li>View, track status, and cancel personal bookings from a private "My Bookings" page</li>
+        <li>Add, update, and delete facility listings from a private "Manage My Facilities" dashboard</li>
+        <li>Secure authentication — email/password and Google OAuth via Better Auth</li>
+        <li>JWT issued and stored in an HttpOnly cookie, verified in Express middleware to protect private API routes
+        </li>
+        <li>Private routes stay authenticated on page reload — no unwanted redirect to login</li>
+        <li>Light/dark theme toggle and Framer Motion page and component transitions</li>
+        <li>Custom loading spinner and a friendly 404 page for unmatched routes</li>
+        <li>Separate client and server architecture connected through REST APIs</li>
+        <li>Deployed on Vercel with MongoDB Atlas as the database, with credentials secured via environment variables
+        </li>
+      </ul>
+
+      <p class="resume-title" style="margin-bottom: 10px;">Challenges Faced</p>
+      <p class="resume-desc" style="margin-bottom: 18px;">
+        Storing the JWT in an HttpOnly cookie instead of local storage meant rethinking how the client checked auth
+        state — I had to make sure logged-in users stayed authenticated on a hard reload of any private route,
+        without ever being incorrectly bounced to the login page. Coordinating that with Better Auth's Google OAuth
+        flow, while keeping the Express middleware strict about verifying every protected request, was the trickiest
+        part of the build. Getting the search and filter system right also took a few iterations — combining
+        MongoDB's <code>$regex</code> for partial name matches with <code>$in</code> for multi-type filtering without
+        slowing down the facilities list.
+      </p>
+
+      <p class="resume-title" style="margin-bottom: 10px;">Future Improvements</p>
+      <p class="resume-desc">
+        Add real-time availability updates with WebSockets, implement an admin dashboard for facility owners, introduce
+        payment gateway integration, and add email confirmation notifications for bookings.
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>

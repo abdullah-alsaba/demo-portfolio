@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="SkillSphere — A responsive online learning platform built with Next.js and React, demonstrating modern frontend architecture and clean UI development.">
+  <title>SkillSphere — Details</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="/favicon/my-brand.svg" type="image/x-icon">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    html,
+    body {
+      overflow: auto;
+      cursor: auto;
+    }
+
+    #cursor,
+    .echo {
+      display: none !important;
+    }
+
+    .detail-wrap {
+      min-height: 100vh;
+      background: #0e0e0e;
+      padding: 56px 20px;
+    }
+
+    .detail-inner .about-heading {
+      color: #ffffff !important;
+    }
+
+    .detail-inner .resume-title {
+      color: #f3f3f3 !important;
+    }
+
+    .detail-inner .resume-desc {
+      color: rgba(255, 255, 255, 0.8) !important;
+    }
+
+    .detail-inner .about-eyebrow {
+      color: rgba(255, 255, 255, 0.6) !important;
+    }
+
+    .detail-inner {
+      width: min(980px, 100%);
+      margin: 0 auto;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 32px;
+    }
+
+    .detail-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 18px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .feature-list li {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.75);
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .feature-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 520px) {
+      .detail-inner {
+        padding: 20px;
+      }
+
+      .detail-top {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="detail-wrap">
+    <section class="detail-inner">
+      <div class="detail-top">
+        <div>
+          <p class="about-eyebrow">Project Details</p>
+          <h1 class="about-heading">SkillSphere.</h1>
+        </div>
+        <a class="project-link" href="/">Back to Home</a>
+      </div>
+
+      <div class="project-actions" style="margin-bottom: 16px;">
+        <a class="project-link" href="https://skillsphere-omega-neon.vercel.app/" target="_blank"
+          rel="noreferrer">Live</a>
+        <a class="project-link" href="https://github.com/abdullah-alsaba/SkillSphereb" target="_blank"
+          rel="noreferrer">GitHub</a>
+      </div>
+
+      <p class="resume-title" style="margin-bottom: 10px;">Tech Stack</p>
+      <div class="project-tags" style="margin-bottom: 18px;">
+        <span class="project-tag">Next.js</span>
+        <span class="project-tag">React</span>
+        <span class="project-tag">JavaScript</span>
+        <span class="project-tag">HTML5</span>
+        <span class="project-tag">CSS3</span>
+        <span class="project-tag">Vercel</span>
+      </div>
+
+      <p class="resume-title" style="margin-bottom: 10px;">Description</p>
+      <p class="resume-desc" style="margin-bottom: 18px;">
+        SkillSphere is an online learning platform designed to deliver an engaging and user-friendly educational
+        experience. Built with Next.js and React, the application showcases modern frontend development practices
+        including server-side rendering, component-based architecture, responsive design, and clean, organized UI
+        development. The project was deployed on Vercel and serves as a demonstration of structured Next.js
+        application development.
+      </p>
+
+      <p class="resume-title" style="margin-bottom: 10px;">Key Features</p>
+      <ul class="feature-list">
+        <li>Responsive interface optimized for all screen sizes</li>
+        <li>Organized course-related content and structured layout</li>
+        <li>Reusable React component architecture</li>
+        <li>Dynamic rendering of educational content</li>
+        <li>Client-side navigation and routing</li>
+        <li>Modern layout and styling techniques</li>
+        <li>Deployed on Vercel for fast and reliable access</li>
+      </ul>
+
+      <p class="resume-title" style="margin-bottom: 10px;">Challenges Faced</p>
+      <p class="resume-desc" style="margin-bottom: 18px;">
+        Structuring reusable components efficiently while keeping the UI consistent across different content types
+        was the primary challenge. Ensuring the layout remained clean and responsive across all device sizes
+        required careful planning of the component hierarchy and CSS layout strategies.
+      </p>
+
+      <p class="resume-title" style="margin-bottom: 10px;">Future Improvements</p>
+      <p class="resume-desc">
+        Add a backend with user authentication, course enrollment and progress tracking, a search and filter
+        system for courses, and an instructor dashboard for content management. Integrating a payment gateway
+        for premium course access is also a planned future feature.
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>
